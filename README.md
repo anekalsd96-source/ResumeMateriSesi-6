@@ -283,6 +283,10 @@ void main() {
 ## Generic Class dan Fungsi
 
 ### Sintaks generic pada class dan function memungkinkan kode digunakan untuk berbagai tipe data secara aman, sehingga lebih efisien, fleksibel, dan mudah dipelihara.
+
+### Repository<T> → menyimpan data berbagai tipe
+### swap<T> → menukar posisi data dalam list
+### Triple<A, B, C> → menyimpan 3 tipe data berbeda
 ---
 ```dart
 // 1. Class Repository
@@ -342,4 +346,71 @@ void main() {
 ### Semua data: [Data 1, Data 2]
 ### Hasil swap: [3, 2, 1]
 ### Triple: Aneka, 20, 3.5
+---
+## 🧠 Teori: Generic vs Dynamic vs Object
+---
+Dalam Dart, terdapat tiga cara menangani tipe data:
+---
+1. Generic (<T>)
+---
+Generic digunakan untuk menentukan tipe data secara spesifik saat compile-time.
+✔️ Aman (type-safe)
+✔️ Tidak perlu casting
+✔️ Performa lebih baik
+---
+2. Dynamic
+---
+dynamic memungkinkan variabel menyimpan semua tipe data tanpa pengecekan saat compile-time.
+✔️ Fleksibel
+❌ Tidak aman (error muncul saat runtime)
+---
+3. Object
+---
+Object adalah tipe dasar semua tipe data di Dart.
+✔️ Lebih aman dari dynamic
+❌ Harus casting saat digunakan
+---
+### Contoh Kode penggunaan Generic vs Dynamic vs Object
+```dart
+// Generic
+class Box<T> {
+  T data;
+  Box(this.data);
+}
+
+// Dynamic
+class BoxDynamic {
+  dynamic data;
+  BoxDynamic(this.data);
+}
+
+// Object
+class BoxObject {
+  Object data;
+  BoxObject(this.data);
+}
+
+void main() {
+  // ✅ Generic (aman)
+  var box1 = Box<int>(10);
+  print("Generic: ${box1.data}");
+
+  // ❌ Dynamic (berisiko)
+  var box2 = BoxDynamic("Hello");
+  print("Dynamic: ${box2.data}");
+
+  // ⚠️ Object (perlu casting)
+  var box3 = BoxObject(100);
+  int nilai = box3.data as int;
+  print("Object: $nilai");
+
+  // ❌ Contoh error dynamic (runtime)
+  var boxError = BoxDynamic("Text");
+  // int salah = boxError.data; // error saat runtime
+}
+```
+### Output :
+### Generic: 10
+### Dynamic: Hello
+### Object: 100
 ---

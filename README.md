@@ -33,12 +33,15 @@ class Box<T> {
 }
 ```
 ---
-# ✅ Generic Function
+✅ Generic Function
 ```dart
 T myFunc<T>(T value) {
   return value;
 }
+```
+---
 ✅ Multiple Type Parameter
+```dart
 class Pair<K, V> {
   K key;
   V value;

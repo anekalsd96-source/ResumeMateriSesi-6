@@ -17,7 +17,8 @@ class Box {
   dynamic data;
   Box(this.data);
 }
-''' 
+```
+```dart
 ✅ Dengan Generic
 class Box<T> {
   T data;

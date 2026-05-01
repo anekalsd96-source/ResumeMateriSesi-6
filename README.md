@@ -59,9 +59,9 @@ void main() {
 }
 ```
 ### Output:
-Nilai box1: 10
-Nilai box2: Hello
-Nilai box3: 3.14
+### Nilai box1: 10
+### Nilai box2: Hello
+### Nilai box3: 3.14
 ---
 ✅ Generic Function
 ```dart

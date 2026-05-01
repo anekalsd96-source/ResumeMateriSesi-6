@@ -17,7 +17,7 @@ Mengurangi duplikasi kode
 ---
 💻 2. Contoh Kode
 ---
-# ❌ Tanpa Generic
+❌ Tanpa Generic
 ---
 '''dart
 class Box {
@@ -26,7 +26,7 @@ class Box {
 }
 ```
 ---
-### ✅ Dengan Generic
+ ✅ Dengan Generic
 ```dart
 class Box<T> {
   T data;

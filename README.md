@@ -349,24 +349,24 @@ void main() {
 ---
 ## 🧠 Teori: Generic vs Dynamic vs Object
 ---
-Dalam Dart, terdapat tiga cara menangani tipe data:
+### Dalam Dart, terdapat tiga cara menangani tipe data:
 ---
 1. Generic (<T>)
 ---
-Generic digunakan untuk menentukan tipe data secara spesifik saat compile-time.
+### Generic digunakan untuk menentukan tipe data secara spesifik saat compile-time.
 ✔️ Aman (type-safe)
 ✔️ Tidak perlu casting
 ✔️ Performa lebih baik
 ---
 2. Dynamic
 ---
-dynamic memungkinkan variabel menyimpan semua tipe data tanpa pengecekan saat compile-time.
+### dynamic memungkinkan variabel menyimpan semua tipe data tanpa pengecekan saat compile-time.
 ✔️ Fleksibel
 ❌ Tidak aman (error muncul saat runtime)
 ---
 3. Object
 ---
-Object adalah tipe dasar semua tipe data di Dart.
+### Object adalah tipe dasar semua tipe data di Dart.
 ✔️ Lebih aman dari dynamic
 ❌ Harus casting saat digunakan
 ---

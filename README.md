@@ -18,7 +18,6 @@
 ## 💻 3. Contoh Kode
 ---
 ❌ Tanpa Generic
----
 '''dart
 class Box {
   dynamic data;

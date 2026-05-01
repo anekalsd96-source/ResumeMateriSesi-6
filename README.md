@@ -18,13 +18,12 @@
 ## 💻 3. Contoh Kode
 ---
 ❌ Tanpa Generic
-'''dart
+```dart
 class Box {
   dynamic data;
   Box(this.data);
 }
 ```
-'''dart
 ---
  ✅ Dengan Generic
 ```dart

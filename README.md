@@ -414,3 +414,56 @@ void main() {
 ### Dynamic: Hello
 ### Object: 100
 ---
+## Cache Generic
+### Cache Generic adalah struktur penyimpanan data sementara yang menggunakan Generic <T> sehingga dapat menyimpan berbagai tipe data dengan aman (type-safe).
+---
+Cache biasanya digunakan untuk:
+---
+### Menyimpan data sementara
+### Mempercepat akses data
+### Mengurangi pengambilan data berulang
+---
+Dengan Generic, kita bisa membuat satu class cache yang bisa digunakan untuk berbagai tipe data tanpa membuat ulang class.
+---
+### Contohnya :
+```dart
+class Cache<T> {
+  final Map<String, T> _storage = {};
+
+  void set(String key, T value) {
+    _storage[key] = value;
+  }
+
+  T? get(String key) {
+    return _storage[key];
+  }
+
+  void remove(String key) {
+    _storage.remove(key);
+  }
+}
+
+void main() {
+  print("Program berjalan");
+
+  // Cache untuk String
+  var userCache = Cache<String>();
+  userCache.set("name", "Aneka");
+  print("User: ${userCache.get("name")}");
+
+  // Cache untuk int
+  var numberCache = Cache<int>();
+  numberCache.set("age", 20);
+  print("Age: ${numberCache.get("age")}");
+
+  // Cache untuk object
+  var listCache = Cache<List<int>>();
+  listCache.set("numbers", [1, 2, 3]);
+  print("Numbers: ${listCache.get("numbers")}");
+}
+```
+### Output :
+### Program berjalan
+### User: Aneka
+### Age: 20
+### Numbers: [1, 2, 3]

@@ -1,8 +1,8 @@
 # 📘 TUGAS – GENERIC (RESUME SESI 6)
 
-# Nama: Aneka Lisda
-# NIM: 25141013P
-# Kelas: SI2KR
+## Nama: Aneka Lisda
+## NIM: 25141013P
+## Kelas: SI2KR
 
 ## 🧠 1. Pengertian Generic
 ### Generic adalah fitur dalam bahasa pemrograman Dart yang memungkinkan kita membuat kode yang dapat digunakan untuk berbagai tipe data dengan tetap menjaga keamanan tipe (type-safe).

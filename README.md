@@ -39,7 +39,23 @@ void main() {
 ```dart
 class Box<T> {
   T data;
+
   Box(this.data);
+}
+
+void main() {
+
+  // Box dengan tipe int
+  var box1 = Box<int>(10);
+  print("Nilai box1: ${box1.data}");
+
+  // Box dengan tipe String
+  var box2 = Box<String>("Hello");
+  print("Nilai box2: ${box2.data}");
+
+  // Box dengan tipe double
+  var box3 = Box<double>(3.14);
+  print("Nilai box3: ${box3.data}");
 }
 ```
 ---

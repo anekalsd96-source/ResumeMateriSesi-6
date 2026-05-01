@@ -125,7 +125,7 @@ nama–nilai
 id–harga
 Lebih fleksibel dan type-safe
 ---
-### ✅ Menggabungkan 2 Tipe Berbeda
+✅ Menggabungkan 2 Tipe Berbeda
 ```dart
 String combine<T, U>(T a, U b) {
   return "$a, $b";
@@ -147,9 +147,9 @@ void main() {
 }
 ```
 ### Output :
-Umur, 20
-10, 3.14
-Nama, Aneka
+### Umur, 20
+### 10, 3.14
+### Nama, Aneka
 ---
 ✅ Generic dengan extends
 ```dart

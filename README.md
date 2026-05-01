@@ -1,4 +1,4 @@
-# 📘 TUGAS – GENERIC (RESUME SESI 6)
+## 📘 TUGAS – GENERIC (RESUME SESI 6)
 
 ## Nama: Aneka Lisda
 ## NIM: 25141013P

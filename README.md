@@ -11,15 +11,15 @@ Generic adalah fitur yang memungkinkan kita membuat kode yang dapat digunakan un
 
 # 💻 2. Contoh Kode
 ---
-'''dart
 ❌ Tanpa Generic
+'''dart
 class Box {
   dynamic data;
   Box(this.data);
 }
 ```
-```dart
 ✅ Dengan Generic
+```dart
 class Box<T> {
   T data;
   Box(this.data);

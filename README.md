@@ -34,6 +34,8 @@ class Pair<K, V> {
   V value;
   Pair(this.key, this.value);
 }
+```
+```dart
 ✅ Menggabungkan 2 Tipe Berbeda
 String combine<T, U>(T a, U b) {
   return "$a, $b";
@@ -51,6 +53,8 @@ void printData<T extends Iterable>(T data) {
     print(item);
   }
 }
+```
+```dart
 ✅ Pembatasan dengan Abstract Class
 abstract class Animal {
   void sound();
@@ -64,3 +68,4 @@ class Cage<T extends Animal> {
   T animal;
   Cage(this.animal);
 }
+```

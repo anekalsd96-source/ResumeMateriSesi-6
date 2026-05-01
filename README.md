@@ -38,7 +38,10 @@ void main() {
 ### 10
 ### Hello
 ---
- ✅ Dengan Generic
+### ✅ Dengan Generic
+---
+###  Penggunaan Generic (<T>) pada class Box membuat program lebih aman karena tipe data ditentukan sejak awal dan diperiksa ### saat compile-time (type safety). Hal ini mencegah kesalahan tipe data sebelum program dijalankan. Selain itu, Generic ### membuat kode lebih fleksibel dan dapat digunakan kembali untuk berbagai tipe data tanpa mengurangi kejelasan dan keandalan program.
+ ---
 ```dart
 class Box<T> {
   T data;
@@ -66,7 +69,10 @@ void main() {
 ### Nilai box2: Hello
 ### Nilai box3: 3.14
 ---
-### ✅ Contoh Sintaks Generic pada Class dan Function
+### ✅ Sintaks Generic pada Class dan Function
+---
+### Penggunaan sintaks Generic pada class dan function memungkinkan kode digunakan untuk berbagai tipe data dengan tetap ### menjaga keamanan tipe (type safety). Dengan <T>, kita dapat membuat class dan fungsi yang fleksibel, reusable, dan lebih ### efisien tanpa perlu menulis kode berulang. Selain itu, Generic membantu mencegah kesalahan tipe sejak compile-time sehingga ### program menjadi lebih aman dan mudah dipelihara.
+---
 ```dart
 T myFunc<T>(T value) {
   return value;

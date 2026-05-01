@@ -12,6 +12,7 @@ Generic adalah fitur yang memungkinkan kita membuat kode yang dapat digunakan un
 ###💻 2. Contoh Kode
 ---
 ## ❌ Tanpa Generic
+---
 '''dart
 class Box {
   dynamic data;

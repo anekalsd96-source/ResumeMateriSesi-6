@@ -10,10 +10,10 @@ Dengan generic, kita tidak perlu membuat class atau fungsi yang sama untuk tipe 
 ---
 
 # 🧠 2. Tujuan Penggunaan Generic
-# Menghindari penggunaan tipe data dynamic
-# Meningkatkan keamanan tipe data (type safety)
-# Membuat kode lebih fleksibel dan reusable
-# Mengurangi duplikasi kode
+### Menghindari penggunaan tipe data dynamic
+### Meningkatkan keamanan tipe data (type safety)
+### Membuat kode lebih fleksibel dan reusable
+### Mengurangi duplikasi kode
 ---
 # 💻 3. Contoh Kode
 ---

@@ -21,7 +21,14 @@
 ```dart
 class Box {
   dynamic data;
+
   Box(this.data);
+}
+void main() {
+  var box1 = Box(10);        // int
+  var box2 = Box("Hello");   // String
+  print(box1.data);
+  print(box2.data);
 }
 ```
 ---

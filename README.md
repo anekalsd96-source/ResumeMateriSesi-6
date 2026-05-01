@@ -118,6 +118,13 @@ void main() {
 ### Key: name, Value: Aneka
 ### Key: 1, Value: 3.14
 ---
+### Penjelasan Singkat :
+<K, V> → dua tipe data (Key & Value)
+Bisa digunakan untuk menyimpan pasangan data seperti:
+nama–nilai
+id–harga
+Lebih fleksibel dan type-safe
+---
 ### ✅ Menggabungkan 2 Tipe Berbeda
 ```dart
 String combine<T, U>(T a, U b) {

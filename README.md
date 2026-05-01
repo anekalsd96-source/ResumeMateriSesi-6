@@ -139,7 +139,7 @@ void main() {
 ---
 ### ✅ Menggabungkan 2 Nilai dengan Tipe Data yang Berbeda
 ---
-### Penggunaan Generic dengan dua parameter tipe (misalnya <T, U>) memungkinkan kita menggabungkan nilai dengan tipe data ### yang berbeda secara fleksibel dan aman. Dengan cara ini, fungsi tetap reusable untuk berbagai kombinasi tipe tanpa perlu ### membuat banyak versi fungsi. Selain itu, keamanan tipe tetap terjaga karena setiap nilai tetap memiliki tipe yang jelas.
+### Penggunaan Generic dengan dua parameter tipe (misalnya <T, U>) memungkinkan kita menggabungkan nilai dengan tipe data ### yang berbeda secara fleksibel dan aman. ### Dengan cara ini, fungsi tetap reusable untuk berbagai kombinasi tipe tanpa perlu ### membuat banyak versi fungsi. Selain itu, keamanan tipe tetap terjaga karena setiap ### nilai tetap memiliki tipe yang jelas.
 ---
 ```dart
 String combine<T, U>(T a, U b) {
@@ -168,7 +168,7 @@ void main() {
 ---
 ### ✅ Generic dengan extends
 ---
-### Generic dengan extends digunakan untuk membatasi tipe data yang dapat digunakan pada parameter generic. Hal ini membuat ### program lebih aman (type-safe) karena hanya tipe tertentu yang diperbolehkan. Selain itu, extends memungkinkan ### penggunaan method atau properti dari tipe tersebut, sehingga kode menjadi lebih terstruktur dan terhindar dari kesalahan.
+### Generic dengan extends digunakan untuk membatasi tipe data yang dapat digunakan pada parameter generic. Hal ini membuat ### program lebih aman (type-safe) karena hanya ### tipe tertentu yang diperbolehkan. Selain itu, extends memungkinkan ### penggunaan method atau properti dari tipe tersebut, sehingga kode menjadi lebih terstruktur dan ### terhindar dari kesalahan.
 ---
 ```dart
 class NumberBox<T extends num> {
@@ -203,7 +203,7 @@ void main() {
 ---
 ### ✅ Type Inference
 ---
-### Type Inference adalah kemampuan Dart untuk menentukan tipe data secara otomatis tanpa harus ditulis secara eksplisit. ### Dengan fitur ini, penggunaan Generic menjadi lebih sederhana dan ringkas, namun tetap menjaga keamanan tipe (type ### safety). Hal ini membuat kode lebih mudah dibaca, efisien, dan praktis digunakan.
+### Type Inference adalah kemampuan Dart untuk menentukan tipe data secara otomatis tanpa harus ditulis secara eksplisit. ### Dengan fitur ini, penggunaan Generic menjadi ### lebih sederhana dan ringkas, namun tetap menjaga keamanan tipe (type ### safety). Hal ini membuat kode lebih mudah dibaca, efisien, dan praktis digunakan.
 ---
 ```dart
 T myFunc<T>(T value) {
@@ -231,7 +231,7 @@ void main() {
 ---
 ### ✅ Pembatasan Tipe pada Interface dan Class
 ---
-### Pembatasan tipe pada interface dan class digunakan untuk memastikan bahwa parameter generic hanya menerima tipe data ### tertentu yang sesuai. Dengan menggunakan extends, program menjadi lebih aman (type-safe) karena hanya tipe yang memiliki ### struktur atau perilaku tertentu yang dapat digunakan. Selain itu, pembatasan ini memungkinkan penggunaan method dari ### interface atau class tersebut, sehingga kode lebih terstruktur, jelas, dan terhindar dari kesalahan.
+### Pembatasan tipe pada interface dan class digunakan untuk memastikan bahwa parameter generic hanya menerima tipe data ### tertentu yang sesuai. Dengan menggunakan ### extends, program menjadi lebih aman (type-safe) karena hanya tipe yang memiliki ### struktur atau perilaku tertentu yang dapat digunakan. Selain itu, pembatasan ini ### memungkinkan penggunaan method dari ### interface atau class tersebut, sehingga kode lebih terstruktur, jelas, dan terhindar dari kesalahan.
 ---
 ```dart
 void printData<T extends Iterable>(T data) {
@@ -260,7 +260,7 @@ void main() {
 ---
 ### ✅ Pembatasan Type dengan Class Abstract
 ---
-### Pembatasan tipe dengan abstract class (T extends Animal) digunakan untuk memastikan bahwa tipe generic hanya boleh berupa turunan dari class Animal, sehingga method seperti sound() bisa dipanggil dengan aman.
+### Pembatasan tipe dengan abstract class (T extends Animal) digunakan untuk memastikan bahwa tipe generic hanya boleh berupa turunan dari class Animal, sehingga method ### seperti sound() bisa dipanggil dengan aman.
 ---
 ```dart
 abstract class Animal {
@@ -439,10 +439,10 @@ void main() {
 ### Object: 100
 ---
 ## Cache Generic
+---
 ### Cache Generic adalah struktur penyimpanan data sementara yang menggunakan Generic <T> sehingga dapat menyimpan berbagai tipe data dengan aman (type-safe).
 ---
-Cache biasanya digunakan untuk:
----
+### Cache biasanya digunakan untuk:
 ### Menyimpan data sementara
 ### Mempercepat akses data
 ### Mengurangi pengambilan data berulang

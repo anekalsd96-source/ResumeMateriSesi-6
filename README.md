@@ -130,19 +130,85 @@ Lebih fleksibel dan type-safe
 String combine<T, U>(T a, U b) {
   return "$a, $b";
 }
+
+void main() {
+
+  // Contoh 1
+  var hasil1 = combine<String, int>("Umur", 20);
+  print(hasil1);
+
+  // Contoh 2
+  var hasil2 = combine<int, double>(10, 3.14);
+  print(hasil2);
+
+  // Contoh 3 (tanpa tipe eksplisit / type inference)
+  var hasil3 = combine("Nama", "Aneka");
+  print(hasil3);
+}
 ```
+### Output :
+Umur, 20
+10, 3.14
+Nama, Aneka
 ---
 ✅ Generic dengan extends
 ```dart
 class NumberBox<T extends num> {
   T value;
+
   NumberBox(this.value);
+
+  T getValue() {
+    return value;
+  }
+}
+
+void main() {
+  print("Program berjalan");
+
+  // Contoh dengan int
+  var intBox = NumberBox<int>(10);
+  print("Nilai int: ${intBox.getValue()}");
+
+  // Contoh dengan double
+  var doubleBox = NumberBox<double>(3.14);
+  print("Nilai double: ${doubleBox.getValue()}");
+
+  // ❌ Ini akan error (karena String bukan turunan dari num)
+  // var stringBox = NumberBox<String>("Hello");
 }
 ```
+### Output :
+Umur, 20
+10, 3.14
+Nama, Aneka
 ---
 ✅ Type Inference
-```dart
-var data = myFunc(10); // otomatis int
+T myFunc<T>(T value) {
+  return value;
+}
+
+void main() {
+
+  // Type Inference (tidak perlu menulis <int>)
+  var data = myFunc(10);        // otomatis int
+  var text = myFunc("Hello");  // otomatis String
+
+  print("Nilai data: $data");
+  print("Tipe data: ${data.runtimeType}");
+
+  print("Nilai text: $text");
+  print("Tipe text: ${text.runtimeType}");
+}
+```
+### Output :
+Nilai data: 10
+Tipe data: int
+Nilai text: Hello
+Tipe text: String
+
+
+---
 ✅ Pembatasan Tipe Interface
 void printData<T extends Iterable>(T data) {
   for (var item in data) {

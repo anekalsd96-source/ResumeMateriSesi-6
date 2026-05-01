@@ -280,14 +280,66 @@ void main() {
 ### Meow
 ---
 
-## Sintaks Generic pada Class dan Function
+## Generic Class dan Fungsi
 
-### Generic adalah fitur yang memungkinkan kita membuat class dan function yang dapat bekerja dengan berbagai tipe data menggunakan parameter tipe seperti <T>.
-### Pada class generic, tipe data ditentukan saat objek dibuat, sehingga class dapat digunakan untuk berbagai tipe tanpa menulis ulang kode.
-### Pada function generic, tipe data ditentukan saat fungsi dipanggil, sehingga fungsi dapat menerima dan mengembalikan berbagai tipe data dengan aman (type-safe).
+### Sintaks generic pada class dan function memungkinkan kode digunakan untuk berbagai tipe data secara aman, sehingga lebih efisien, fleksibel, dan mudah dipelihara.
 ---
-## 🎯 Tujuan:
-### Membuat kode fleksibel dan reusable
-### Menjaga keamanan tipe (type safety)
-### Mengurangi duplikasi kode
+```dart
+// 1. Class Repository
+class Repository<T> {
+  List<T> _data = [];
+
+  void save(T item) {
+    _data.add(item);
+  }
+
+  T getById(int id) {
+    return _data[id];
+  }
+
+  List<T> getAll() {
+    return _data;
+  }
+}
+
+// 2. Fungsi generic swap
+void swap<T>(List<T> list, int i, int j) {
+  T temp = list[i];
+  list[i] = list[j];
+  list[j] = temp;
+}
+
+// 3. Class Triple
+class Triple<A, B, C> {
+  A first;
+  B second;
+  C third;
+
+  Triple(this.first, this.second, this.third);
+}
+
+void main() {
+  // 🔹 Test Repository
+  var repo = Repository<String>();
+  repo.save("Data 1");
+  repo.save("Data 2");
+
+  print("Data pertama: ${repo.getById(0)}");
+  print("Semua data: ${repo.getAll()}");
+
+  // 🔹 Test swap
+  var list = [1, 2, 3];
+  swap(list, 0, 2);
+  print("Hasil swap: $list");
+
+  // 🔹 Test Triple
+  var triple = Triple<String, int, double>("Aneka", 20, 3.5);
+  print("Triple: ${triple.first}, ${triple.second}, ${triple.third}");
+}
+```
+### Output :
+### Data pertama: Data 1
+### Semua data: [Data 1, Data 2]
+### Hasil swap: [3, 2, 1]
+### Triple: Aneka, 20, 3.5
 ---

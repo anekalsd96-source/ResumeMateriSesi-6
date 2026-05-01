@@ -125,7 +125,7 @@ nama–nilai
 id–harga
 ### Lebih fleksibel dan type-safe
 ---
-✅ Menggabungkan 2 Tipe Berbeda
+✅ Menggabungkan 2 Nilai dengan Tipe Data yang Berbeda
 ```dart
 String combine<T, U>(T a, U b) {
   return "$a, $b";
@@ -184,6 +184,7 @@ void main() {
 ### Nama, Aneka
 ---
 ✅ Type Inference
+```dart
 T myFunc<T>(T value) {
   return value;
 }
@@ -202,20 +203,36 @@ void main() {
 }
 ```
 ### Output :
-Nilai data: 10
-Tipe data: int
-Nilai text: Hello
-Tipe text: String
-
-
+### Nilai data: 10
+### Tipe data: int
+### Nilai text: Hello
+### Tipe text: String
 ---
-✅ Pembatasan Tipe Interface
+✅ Pembatasan Tipe pada Interface dan Class
+```dart
 void printData<T extends Iterable>(T data) {
   for (var item in data) {
     print(item);
   }
 }
+
+void main() {
+  print("Contoh Interface:");
+
+  printData([1, 2, 3]);        // List
+  printData({"A", "B"});       // Set
+
+  // ❌ Error:
+  // printData(10);
+}
 ```
+### Output :
+### Contoh Interface:
+### 1
+### 2
+### 3
+### A
+### B
 ---
 ✅ Pembatasan dengan Abstract Class
 ```dart

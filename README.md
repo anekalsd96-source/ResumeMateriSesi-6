@@ -25,6 +25,7 @@ class Box {
   Box(this.data);
 }
 ```
+'''dart
 ---
  ✅ Dengan Generic
 ```dart

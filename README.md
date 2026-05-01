@@ -31,6 +31,9 @@ void main() {
   print(box2.data);
 }
 ```
+### Output :
+### 10
+### Hello
 ---
  ✅ Dengan Generic
 ```dart

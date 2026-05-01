@@ -58,7 +58,7 @@ void main() {
   print("Nilai box3: ${box3.data}");
 }
 ```
-### Output:
+### Output :
 ### Nilai box1: 10
 ### Nilai box2: Hello
 ### Nilai box3: 3.14
@@ -94,9 +94,29 @@ void main() {
 class Pair<K, V> {
   K key;
   V value;
+
   Pair(this.key, this.value);
 }
+
+void main() {
+
+  // Contoh 1: String dan int
+  var pair1 = Pair<String, int>("age", 20);
+  print("Key: ${pair1.key}, Value: ${pair1.value}");
+
+  // Contoh 2: String dan String
+  var pair2 = Pair<String, String>("name", "Aneka");
+  print("Key: ${pair2.key}, Value: ${pair2.value}");
+
+  // Contoh 3: int dan double
+  var pair3 = Pair<int, double>(1, 3.14);
+  print("Key: ${pair3.key}, Value: ${pair3.value}");
+}
 ```
+### Output :
+Key: age, Value: 20
+Key: name, Value: Aneka
+Key: 1, Value: 3.14
 ---
 ### ✅ Menggabungkan 2 Tipe Berbeda
 ```dart

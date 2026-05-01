@@ -235,7 +235,7 @@ void main() {
 ### B
 ---
 ✅ Pembatasan Type dengan Class Abstract
-🧠 Teori Singkat
+### 
 ---
 Pembatasan tipe dengan abstract class (T extends Animal) digunakan untuk memastikan bahwa tipe generic hanya boleh berupa turunan dari class Animal, sehingga method seperti sound() bisa dipanggil dengan aman.
 ---
@@ -266,8 +266,6 @@ class Cage<T extends Animal> {
 }
 
 void main() {
-  print("Program berjalan");
-
   var dogCage = Cage(Dog());
   dogCage.makeSound();
 
@@ -278,4 +276,7 @@ void main() {
   // var wrong = Cage<String>("Hello");
 }
 ```
+### Output :
+Woof
+Meow
 ---

@@ -63,7 +63,7 @@ void main() {
 ### Nilai box2: Hello
 ### Nilai box3: 3.14
 ---
-✅ Generic Function
+✅ Contoh Sintaks Generic pada Class dan Function
 ```dart
 T myFunc<T>(T value) {
   return value;
@@ -278,4 +278,16 @@ void main() {
 ### Output :
 ### Woof
 ### Meow
+---
+
+## Sintaks Generic pada Class dan Function
+
+### Generic adalah fitur yang memungkinkan kita membuat class dan function yang dapat bekerja dengan berbagai tipe data menggunakan parameter tipe seperti <T>.
+### Pada class generic, tipe data ditentukan saat objek dibuat, sehingga class dapat digunakan untuk berbagai tipe tanpa menulis ulang kode.
+### Pada function generic, tipe data ditentukan saat fungsi dipanggil, sehingga fungsi dapat menerima dan mengembalikan berbagai tipe data dengan aman (type-safe).
+---
+## 🎯 Tujuan:
+### Membuat kode fleksibel dan reusable
+### Menjaga keamanan tipe (type safety)
+### Mengurangi duplikasi kode
 ---

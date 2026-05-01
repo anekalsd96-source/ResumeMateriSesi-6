@@ -18,7 +18,8 @@ class Box {
   Box(this.data);
 }
 ```
-✅ Dengan Generic
+# ✅ Dengan Generic
+---
 ```dart
 class Box<T> {
   T data;

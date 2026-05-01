@@ -99,6 +99,9 @@ void main() {
 ### Nilai double: 3.14
 ---
 ### ✅ Multiple Type Parameter
+---
+### Multiple Type Parameter memungkinkan sebuah class atau function menggunakan lebih dari satu tipe data sekaligus ### (misalnya <K, V> atau <A, B, C>). Hal ini membuat program lebih fleksibel dan mampu menangani data yang berbeda dalam satu ### struktur tanpa mengurangi keamanan tipe. Dengan demikian, kode menjadi lebih reusable, terstruktur, dan tetap type-safe.
+---
 ```dart
 class Pair<K, V> {
   K key;
@@ -135,6 +138,9 @@ void main() {
 ### Lebih fleksibel dan type-safe
 ---
 ### ✅ Menggabungkan 2 Nilai dengan Tipe Data yang Berbeda
+---
+### Penggunaan Generic dengan dua parameter tipe (misalnya <T, U>) memungkinkan kita menggabungkan nilai dengan tipe data ### yang berbeda secara fleksibel dan aman. Dengan cara ini, fungsi tetap reusable untuk berbagai kombinasi tipe tanpa perlu ### membuat banyak versi fungsi. Selain itu, keamanan tipe tetap terjaga karena setiap nilai tetap memiliki tipe yang jelas.
+---
 ```dart
 String combine<T, U>(T a, U b) {
   return "$a, $b";
@@ -161,6 +167,9 @@ void main() {
 ### Nama, Aneka
 ---
 ### ✅ Generic dengan extends
+---
+### Generic dengan extends digunakan untuk membatasi tipe data yang dapat digunakan pada parameter generic. Hal ini membuat ### program lebih aman (type-safe) karena hanya tipe tertentu yang diperbolehkan. Selain itu, extends memungkinkan ### penggunaan method atau properti dari tipe tersebut, sehingga kode menjadi lebih terstruktur dan terhindar dari kesalahan.
+---
 ```dart
 class NumberBox<T extends num> {
   T value;
@@ -193,6 +202,9 @@ void main() {
 ### Nama, Aneka
 ---
 ### ✅ Type Inference
+---
+### Type Inference adalah kemampuan Dart untuk menentukan tipe data secara otomatis tanpa harus ditulis secara eksplisit. ### Dengan fitur ini, penggunaan Generic menjadi lebih sederhana dan ringkas, namun tetap menjaga keamanan tipe (type ### safety). Hal ini membuat kode lebih mudah dibaca, efisien, dan praktis digunakan.
+---
 ```dart
 T myFunc<T>(T value) {
   return value;
@@ -218,6 +230,9 @@ void main() {
 ### Tipe text: String
 ---
 ### ✅ Pembatasan Tipe pada Interface dan Class
+---
+### Pembatasan tipe pada interface dan class digunakan untuk memastikan bahwa parameter generic hanya menerima tipe data ### tertentu yang sesuai. Dengan menggunakan extends, program menjadi lebih aman (type-safe) karena hanya tipe yang memiliki ### struktur atau perilaku tertentu yang dapat digunakan. Selain itu, pembatasan ini memungkinkan penggunaan method dari ### interface atau class tersebut, sehingga kode lebih terstruktur, jelas, dan terhindar dari kesalahan.
+---
 ```dart
 void printData<T extends Iterable>(T data) {
   for (var item in data) {
@@ -290,7 +305,7 @@ void main() {
 ---
 
 ## Generic Class dan Fungsi
-
+---
 ### Sintaks generic pada class dan function memungkinkan kode digunakan untuk berbagai tipe data secara aman, sehingga lebih efisien, fleksibel, dan mudah dipelihara.
 
 ### Repository<T> → menyimpan data berbagai tipe

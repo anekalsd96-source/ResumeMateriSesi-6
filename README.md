@@ -57,6 +57,7 @@ String combine<T, U>(T a, U b) {
 ```
 ---
 ✅ Generic dengan extends
+```dart
 class NumberBox<T extends num> {
   T value;
   NumberBox(this.value);
@@ -64,6 +65,7 @@ class NumberBox<T extends num> {
 ```
 ---
 ✅ Type Inference
+```dart
 var data = myFunc(10); // otomatis int
 ✅ Pembatasan Tipe Interface
 void printData<T extends Iterable>(T data) {
@@ -71,9 +73,10 @@ void printData<T extends Iterable>(T data) {
     print(item);
   }
 }
-
-```dart
+```
+---
 ✅ Pembatasan dengan Abstract Class
+```dart
 abstract class Animal {
   void sound();
 }
@@ -81,6 +84,8 @@ abstract class Animal {
 class Dog implements Animal {
   void sound() => print("Woof");
 }
+```
+---
 
 class Cage<T extends Animal> {
   T animal;

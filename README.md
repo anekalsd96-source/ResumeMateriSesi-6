@@ -19,7 +19,7 @@
 ---
 ### ❌ Tanpa Generic
 ---
-Penggunaan dynamic pada class Box membuat program sangat fleksibel karena dapat menyimpan berbagai tipe data seperti int dan String. Namun, pendekatan ini tidak memiliki keamanan tipe (type safety) karena tidak ada pengecekan saat compile-time. Akibatnya, kesalahan tipe baru akan muncul saat program dijalankan (runtime error). Oleh karena itu, meskipun mudah digunakan, penggunaan tanpa generic kurang disarankan untuk program yang membutuhkan keamanan dan keandalan data.
+### Penggunaan dynamic pada class Box membuat program sangat fleksibel karena dapat menyimpan berbagai tipe data seperti int ### dan String. Namun, pendekatan ini tidak memiliki keamanan tipe (type safety) karena tidak ada pengecekan saat compile-### time. Akibatnya, kesalahan tipe baru akan muncul saat program dijalankan (runtime error). Oleh karena itu, meskipun ###  ### mudah digunakan, penggunaan tanpa generic kurang disarankan untuk program yang membutuhkan keamanan dan keandalan data.
 ---
 ```dart
 class Box {

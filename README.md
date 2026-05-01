@@ -4,9 +4,16 @@
 # NIM: 25141013P
 # Kelas: SI2KR
 
-## 🧠 1. Ringkasan Materi Generic
+## 🧠 1. Pengertian Generic
+Generic adalah fitur dalam bahasa pemrograman Dart yang memungkinkan kita membuat kode yang dapat digunakan untuk berbagai tipe data dengan tetap menjaga keamanan tipe (type-safe).
+Dengan generic, kita tidak perlu membuat class atau fungsi yang sama untuk tipe data yang berbeda, sehingga kode menjadi lebih efisien dan reusable.
+---
 
-Generic adalah fitur yang memungkinkan kita membuat kode yang dapat digunakan untuk berbagai tipe data dengan tetap aman (type-safe). Dengan generic, kesalahan tipe bisa dicegah sejak compile-time, berbeda dengan penggunaan dynamic yang baru diketahui saat runtime. Generic dapat digunakan pada class, function, dan collection. Selain itu, terdapat konsep seperti multiple type parameters, type inference, serta pembatasan tipe menggunakan extends untuk memastikan hanya tipe tertentu yang diperbolehkan. Generic juga lebih aman dan efisien dibanding dynamic dan Object karena tidak memerlukan casting dan memiliki performa lebih baik.
+## 🧠 2. Tujuan Penggunaan Generic
+Menghindari penggunaan tipe data dynamic
+Meningkatkan keamanan tipe data (type safety)
+Membuat kode lebih fleksibel dan reusable
+Mengurangi duplikasi kode
 ---
 
 ###💻 2. Contoh Kode

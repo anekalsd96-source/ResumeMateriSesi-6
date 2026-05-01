@@ -114,9 +114,9 @@ void main() {
 }
 ```
 ### Output :
-Key: age, Value: 20
-Key: name, Value: Aneka
-Key: 1, Value: 3.14
+### Key: age, Value: 20
+### Key: name, Value: Aneka
+### Key: 1, Value: 3.14
 ---
 ### ✅ Menggabungkan 2 Tipe Berbeda
 ```dart

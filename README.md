@@ -68,7 +68,26 @@ void main() {
 T myFunc<T>(T value) {
   return value;
 }
+
+void main() {
+ 
+  // Contoh dengan int
+  var angka = myFunc<int>(100);
+  print("Nilai int: $angka");
+
+  // Contoh dengan String
+  var teks = myFunc<String>("Hello");
+  print("Nilai string: $teks");
+
+  // Contoh dengan double
+  var desimal = myFunc<double>(3.14);
+  print("Nilai double: $desimal");
+}
 ```
+### Output :
+### Nilai int: 100
+### Nilai string: Hello
+### Nilai double: 3.14
 ---
 ✅ Multiple Type Parameter
 ```dart

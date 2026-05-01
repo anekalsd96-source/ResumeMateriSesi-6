@@ -235,9 +235,8 @@ void main() {
 ### B
 ---
 ✅ Pembatasan Type dengan Class Abstract
-### 
 ---
-Pembatasan tipe dengan abstract class (T extends Animal) digunakan untuk memastikan bahwa tipe generic hanya boleh berupa turunan dari class Animal, sehingga method seperti sound() bisa dipanggil dengan aman.
+### Pembatasan tipe dengan abstract class (T extends Animal) digunakan untuk memastikan bahwa tipe generic hanya boleh berupa turunan dari class Animal, sehingga method seperti sound() bisa dipanggil dengan aman.
 ---
 ```dart
 abstract class Animal {
@@ -277,6 +276,6 @@ void main() {
 }
 ```
 ### Output :
-Woof
-Meow
+### Woof
+### Meow
 ---

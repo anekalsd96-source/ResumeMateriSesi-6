@@ -15,8 +15,7 @@ Meningkatkan keamanan tipe data (type safety)
 Membuat kode lebih fleksibel dan reusable
 Mengurangi duplikasi kode
 ---
-
-###💻 2. Contoh Kode
+💻 2. Contoh Kode
 ---
 ## ❌ Tanpa Generic
 ---

@@ -121,8 +121,8 @@ void main() {
 ### Penjelasan Singkat :
 ### <K, V> → dua tipe data (Key & Value)
 ### Bisa digunakan untuk menyimpan pasangan data seperti:
-nama–nilai
-id–harga
+### nama–nilai
+### id–harga
 ### Lebih fleksibel dan type-safe
 ---
 ### ✅ Menggabungkan 2 Nilai dengan Tipe Data yang Berbeda

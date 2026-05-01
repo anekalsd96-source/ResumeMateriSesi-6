@@ -32,7 +32,9 @@ class Box<T> {
   Box(this.data);
 }
 ```
+---
 # ✅ Generic Function
+```dart
 T myFunc<T>(T value) {
   return value;
 }
@@ -43,16 +45,21 @@ class Pair<K, V> {
   Pair(this.key, this.value);
 }
 ```
+---
 ### ✅ Menggabungkan 2 Tipe Berbeda
-'''dart
+```dart
 String combine<T, U>(T a, U b) {
   return "$a, $b";
 }
+```
+---
 ✅ Generic dengan extends
 class NumberBox<T extends num> {
   T value;
   NumberBox(this.value);
 }
+```
+---
 ✅ Type Inference
 var data = myFunc(10); // otomatis int
 ✅ Pembatasan Tipe Interface
@@ -61,7 +68,7 @@ void printData<T extends Iterable>(T data) {
     print(item);
   }
 }
-```
+
 ```dart
 ✅ Pembatasan dengan Abstract Class
 abstract class Animal {

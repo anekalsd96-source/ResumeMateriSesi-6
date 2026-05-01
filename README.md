@@ -84,11 +84,10 @@ abstract class Animal {
 class Dog implements Animal {
   void sound() => print("Woof");
 }
-```
----
 
 class Cage<T extends Animal> {
   T animal;
   Cage(this.animal);
 }
 ```
+---

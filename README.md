@@ -119,11 +119,11 @@ void main() {
 ### Key: 1, Value: 3.14
 ---
 ### Penjelasan Singkat :
-<K, V> → dua tipe data (Key & Value)
-Bisa digunakan untuk menyimpan pasangan data seperti:
+### <K, V> → dua tipe data (Key & Value)
+### Bisa digunakan untuk menyimpan pasangan data seperti:
 nama–nilai
 id–harga
-Lebih fleksibel dan type-safe
+### Lebih fleksibel dan type-safe
 ---
 ✅ Menggabungkan 2 Tipe Berbeda
 ```dart
@@ -179,9 +179,9 @@ void main() {
 }
 ```
 ### Output :
-Umur, 20
-10, 3.14
-Nama, Aneka
+### Umur, 20
+### 10, 3.14
+### Nama, Aneka
 ---
 ✅ Type Inference
 T myFunc<T>(T value) {

@@ -58,6 +58,10 @@ void main() {
   print("Nilai box3: ${box3.data}");
 }
 ```
+### Output:
+Nilai box1: 10
+Nilai box2: Hello
+Nilai box3: 3.14
 ---
 ✅ Generic Function
 ```dart

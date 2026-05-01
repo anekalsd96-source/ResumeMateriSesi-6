@@ -63,7 +63,7 @@ void main() {
 ### Nilai box2: Hello
 ### Nilai box3: 3.14
 ---
-✅ Contoh Sintaks Generic pada Class dan Function
+### ✅ Contoh Sintaks Generic pada Class dan Function
 ```dart
 T myFunc<T>(T value) {
   return value;
@@ -89,7 +89,7 @@ void main() {
 ### Nilai string: Hello
 ### Nilai double: 3.14
 ---
-✅ Multiple Type Parameter
+### ✅ Multiple Type Parameter
 ```dart
 class Pair<K, V> {
   K key;
@@ -125,7 +125,7 @@ nama–nilai
 id–harga
 ### Lebih fleksibel dan type-safe
 ---
-✅ Menggabungkan 2 Nilai dengan Tipe Data yang Berbeda
+### ✅ Menggabungkan 2 Nilai dengan Tipe Data yang Berbeda
 ```dart
 String combine<T, U>(T a, U b) {
   return "$a, $b";
@@ -151,7 +151,7 @@ void main() {
 ### 10, 3.14
 ### Nama, Aneka
 ---
-✅ Generic dengan extends
+### ✅ Generic dengan extends
 ```dart
 class NumberBox<T extends num> {
   T value;
@@ -183,7 +183,7 @@ void main() {
 ### 10, 3.14
 ### Nama, Aneka
 ---
-✅ Type Inference
+### ✅ Type Inference
 ```dart
 T myFunc<T>(T value) {
   return value;
@@ -208,7 +208,7 @@ void main() {
 ### Nilai text: Hello
 ### Tipe text: String
 ---
-✅ Pembatasan Tipe pada Interface dan Class
+### ✅ Pembatasan Tipe pada Interface dan Class
 ```dart
 void printData<T extends Iterable>(T data) {
   for (var item in data) {
@@ -234,7 +234,7 @@ void main() {
 ### A
 ### B
 ---
-✅ Pembatasan Type dengan Class Abstract
+### ✅ Pembatasan Type dengan Class Abstract
 ---
 ### Pembatasan tipe dengan abstract class (T extends Animal) digunakan untuk memastikan bahwa tipe generic hanya boleh berupa turunan dari class Animal, sehingga method seperti sound() bisa dipanggil dengan aman.
 ---

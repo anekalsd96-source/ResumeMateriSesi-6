@@ -9,7 +9,7 @@
 Generic adalah fitur yang memungkinkan kita membuat kode yang dapat digunakan untuk berbagai tipe data dengan tetap aman (type-safe). Dengan generic, kesalahan tipe bisa dicegah sejak compile-time, berbeda dengan penggunaan dynamic yang baru diketahui saat runtime. Generic dapat digunakan pada class, function, dan collection. Selain itu, terdapat konsep seperti multiple type parameters, type inference, serta pembatasan tipe menggunakan extends untuk memastikan hanya tipe tertentu yang diperbolehkan. Generic juga lebih aman dan efisien dibanding dynamic dan Object karena tidak memerlukan casting dan memiliki performa lebih baik.
 ---
 
-### 💻 2. Contoh Kode
+###💻 2. Contoh Kode
 ---
 ## ❌ Tanpa Generic
 '''dart
@@ -18,13 +18,14 @@ class Box {
   Box(this.data);
 }
 ```
-###✅ Dengan Generic
+### ✅ Dengan Generic
 ```dart
 class Box<T> {
   T data;
   Box(this.data);
 }
-✅ Generic Function
+```
+# ✅ Generic Function
 T myFunc<T>(T value) {
   return value;
 }

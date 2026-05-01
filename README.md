@@ -4,22 +4,21 @@
 # NIM: 25141013P
 # Kelas: SI2KR
 
-# 🧠 1. Ringkasan Materi Generic
+## 🧠 1. Ringkasan Materi Generic
 
 Generic adalah fitur yang memungkinkan kita membuat kode yang dapat digunakan untuk berbagai tipe data dengan tetap aman (type-safe). Dengan generic, kesalahan tipe bisa dicegah sejak compile-time, berbeda dengan penggunaan dynamic yang baru diketahui saat runtime. Generic dapat digunakan pada class, function, dan collection. Selain itu, terdapat konsep seperti multiple type parameters, type inference, serta pembatasan tipe menggunakan extends untuk memastikan hanya tipe tertentu yang diperbolehkan. Generic juga lebih aman dan efisien dibanding dynamic dan Object karena tidak memerlukan casting dan memiliki performa lebih baik.
 ---
 
-# 💻 2. Contoh Kode
+### 💻 2. Contoh Kode
 ---
-❌ Tanpa Generic
+## ❌ Tanpa Generic
 '''dart
 class Box {
   dynamic data;
   Box(this.data);
 }
 ```
-# ✅ Dengan Generic
----
+###✅ Dengan Generic
 ```dart
 class Box<T> {
   T data;
@@ -36,8 +35,8 @@ class Pair<K, V> {
   Pair(this.key, this.value);
 }
 ```
-```dart
-✅ Menggabungkan 2 Tipe Berbeda
+### ✅ Menggabungkan 2 Tipe Berbeda
+'''dart
 String combine<T, U>(T a, U b) {
   return "$a, $b";
 }
